@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#05060f" />
+<title>Ambiently — Premium Focus Sound Mixer</title>
+<meta name="description" content="Blend rain, ocean, fire, wind, night and cafe ambience into your perfect focus mix. A premium, glow-lit sound mixer that runs entirely in your browser." />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<a class="skip" href="#mixer">Skip to mixer</a>
+
+<div class="aurora" aria-hidden="true">
+  <span class="blob b1"></span>
+  <span class="blob b2"></span>
+  <span class="blob b3"></span>
+</div>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Ambiently home">
+      <span class="mark" aria-hidden="true"></span>
+      <span class="brand-name">Ambiently</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#mixer">Mixer</a>
+      <a href="#presets">Presets</a>
+      <a href="#about">About</a>
+    </nav>
+    <span class="pill"><i class="dot" aria-hidden="true"></i>Live audio · no uploads</span>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <p class="badge">✦ Focus, engineered</p>
+    <h1>Soundtrack your <span class="grad">deep focus</span>.</h1>
+    <p class="lede">Blend six living ambiences into one mix. No files, no downloads — every sound is generated live in your browser with the Web Audio API.</p>
+    <div class="hero-actions">
+      <button id="masterPlay" class="btn primary" type="button" aria-pressed="false">
+        <span class="ico" aria-hidden="true">▶</span><span class="label">Start listening</span>
+      </button>
+      <a class="btn ghost" href="#mixer">Open the mixer</a>
+    </div>
+    <ul class="stats" aria-label="Highlights">
+      <li><strong>6</strong><span>living ambiences</span></li>
+      <li><strong>4</strong><span>one-tap presets</span></li>
+      <li><strong>0</strong><span>files downloaded</span></li>
+    </ul>
+  </section>
+
+  <section id="mixer" class="wrap section" aria-labelledby="mixerTitle">
+    <div class="sec-head">
+      <h2 id="mixerTitle">The Mixer</h2>
+      <p>Tap a card to bring it in. Layer as many as you like.</p>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="presets" class="wrap section" aria-labelledby="presetTitle">
+    <div class="sec-head">
+      <h2 id="presetTitle">Presets</h2>
+      <p>Instantly balanced blends, tuned by ear.</p>
+    </div>
+    <div class="chips" id="chips"></div>
+  </section>
+
+  <section id="about" class="wrap section">
+    <div class="about glass">
+      <h2>About this build</h2>
+      <p>Ambiently is a single-page experiment in browser-native audio. Each ambience is synthesised from filtered noise with crackle bursts and slow modulation layered on top — so the mix never repeats itself the same way twice.</p>
+      <p class="muted">Vanilla HTML, CSS and JavaScript. No frameworks, no CDN, no backend.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <p>Built by <strong>AutoCoder</strong> · <span id="year"></span></p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
